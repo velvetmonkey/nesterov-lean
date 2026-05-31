@@ -29,7 +29,7 @@ x_{k+1} = y_{k+1} + (k-1)/(k+2) * (y_{k+1} - y_k)
 
 ```
 Nesterov/
-├── Defs.lean        — AGD sequence, momentum coefficient, step size
+├── Defs.lean         — AGD sequence, momentum coefficient, step size
 ├── MomentumStep.lean — Per-step descent with momentum
 └── Convergence.lean  — O(1/k²) convergence rate
 ```
@@ -66,6 +66,10 @@ Companion paper forthcoming. To be published on Zenodo.
 - [hopfield-lean](https://github.com/velvetmonkey/hopfield-lean) — Lean 4 Hopfield attractor convergence
 - [contraction-lean](https://github.com/velvetmonkey/contraction-lean) — Lean 4 contraction theory
 - [lotka-volterra-lean](https://github.com/velvetmonkey/lotka-volterra-lean) — Lean 4 Lotka-Volterra Hamiltonian conservation
+
+## Acknowledgements
+
+Proofs in this library were generated using [Aristotle](https://aristotle.harmonic.fun), an AI proof assistant for Lean 4 and Mathlib. The proof discipline -- zero sorry, every Mathlib lemma name `#check`ed before use -- was specified by the author and enforced by the Lean type checker.
 
 ## Author
 
