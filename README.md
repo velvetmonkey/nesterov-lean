@@ -4,6 +4,7 @@
 [![Mathlib](https://img.shields.io/badge/Mathlib-v4.28.0-purple)](https://github.com/leanprover-community/mathlib4)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Proofs](https://img.shields.io/badge/proofs-proven%20%2F%200%20sorry-brightgreen)](NesterovLean)
+[![Paper](https://img.shields.io/badge/Zenodo-20474481-blue)](https://zenodo.org/records/20474481)
 
 Lean 4 formal proofs of Nesterov accelerated gradient descent: O(1/k²) convergence rate via Lyapunov potential argument.
 
@@ -76,11 +77,13 @@ NesterovLean.lean      — Root module
 
 ## Paper
 
-Companion paper forthcoming. To be published on Zenodo.
+**nesterov-lean: Formal Proofs of Nesterov Accelerated Gradient Descent in Lean 4**  
+Ben Cassie (2026). Zenodo.  
+https://zenodo.org/records/20474481
 
 ## Cite
 
-Zenodo DOI forthcoming.
+Cassie, B. (2026). *nesterov-lean: Formal Proofs of Nesterov Accelerated Gradient Descent in Lean 4*. Zenodo. https://zenodo.org/records/20474481
 
 ## Related work
 
