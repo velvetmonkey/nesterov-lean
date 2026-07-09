@@ -100,3 +100,6 @@ Proofs in this library were generated using [Aristotle](https://aristotle.harmon
 ## Author
 
 Ben Cassie · [@thevelvetmonke](https://x.com/thevelvetmonke)
+## Part of the Lean proof corpus
+
+One of a family of small, machine-checked Lean 4 developments. Index: [velvetmonkey/lean](https://github.com/velvetmonkey/lean) ([live index](https://velvetmonkey.github.io/lean)).
