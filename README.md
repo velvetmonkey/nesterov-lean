@@ -1,5 +1,6 @@
 # nesterov-lean
 
+[![thread](https://img.shields.io/badge/%F0%9F%A7%B5-how%20it%20works-1DA1F2)](https://x.com/thevelvetmonke)
 [![Lean 4](https://img.shields.io/badge/Lean-4.28.0-blue)](https://lean-lang.org/)
 [![Mathlib](https://img.shields.io/badge/Mathlib-v4.28.0-purple)](https://github.com/leanprover-community/mathlib4)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -10,7 +11,15 @@ Lean 4 formal proofs of Nesterov accelerated gradient descent: O(1/k²) converge
 
 **Zero sorry statements.** Zero new axioms.
 
-## Why it matters
+## What this is, and why it matters
+
+This library formalizes an accelerated gradient sequence and its O(1/k^2) convergence rate. Its headline theorem, `convergence_rate`, bounds the function-value gap at `y_k` by `2*L*||x0-xstar||^2/k^2` for every positive iteration index.
+
+The machine-checked proof uses a Lyapunov potential. A mixing identity relates the accelerated variables, convexity and smoothness give the per-step inequality, and an auxiliary sequence makes the troublesome gradient and inner-product terms cancel. Nonincrease of the potential then exposes the quadratic denominator.
+
+The smoothness and first-order convexity inequalities are hypotheses stated for a supplied gradient map, and a global minimizer is also supplied. The library does not prove that the map is a derivative of a concrete function, establish the assumptions for an application, or account for numerical and finite-precision effects.
+
+## Background and motivation
 
 Plain gradient descent achieves O(1/k) convergence on smooth convex objectives. Nesterov's 1983 accelerated method achieves O(1/k²) using a momentum term -- and this rate is optimal for first-order methods. The gap between O(1/k) and O(1/k²) is the difference between linear and quadratic speedup, which matters enormously in large-scale machine learning.
 
